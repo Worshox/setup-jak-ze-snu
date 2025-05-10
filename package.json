@@ -35,5 +35,9 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"dependencies": {
+		"@iconify-json/ph": "^1.2.2",
+		"unplugin-icons": "^22.1.0"
 	}
 }
