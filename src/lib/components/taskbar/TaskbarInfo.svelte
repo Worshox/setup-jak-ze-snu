@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import TaskbarInfoDatetime from '$lib/components/taskbar/TaskbarInfoDatetime.svelte';
 	import TaskbarInfoNetwork from '$lib/components/taskbar/TaskbarInfoNetwork.svelte';
 	import TaskbarInfoTray from '$lib/components/taskbar/TaskbarInfoTray.svelte';

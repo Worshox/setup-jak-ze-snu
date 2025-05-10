@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { fade } from 'svelte/transition';
 	import clickOutside from '$lib/actions/clickOutside';
 	import CaretUpIcon from '~icons/ph/caret-up-thin';
