@@ -1,6 +1,6 @@
 <script lang="ts">
-	import StartIcon from '$lib/components/StartIcon.svelte';
-	import TaskbarInfo from '$lib/components/TaskbarInfo.svelte';
+	import StartIcon from '$lib/components/taskbar/StartIcon.svelte';
+	import TaskbarInfo from '$lib/components/taskbar/TaskbarInfo.svelte';
 </script>
 
 <nav>

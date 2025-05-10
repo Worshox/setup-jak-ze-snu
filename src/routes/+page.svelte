@@ -1,6 +1,11 @@
 <script lang="ts">
+	import { setTaskbarInfoContext } from '$lib/utils/context';
 	import Desktop from '$lib/components/Desktop.svelte';
 	import Taskbar from '$lib/components/Taskbar.svelte';
+
+	let { data } = $props();
+
+	setTaskbarInfoContext(data.taskbarInfo);
 </script>
 
 <svelte:head>
