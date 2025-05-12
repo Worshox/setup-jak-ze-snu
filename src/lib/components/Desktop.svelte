@@ -1,17 +1,29 @@
 <script lang="ts">
+	import { setWindowsContext } from '$lib/utils/context';
 	import DesktopIcon from '$lib/components/desktop/DesktopIcon.svelte';
+	import Window from '$lib/components/Window.svelte';
 	import MyComputerIcon from '~icons/ph/desktop-tower-thin';
 	import RecycleBinIcon from '~icons/ph/trash-thin';
-	import BraveIcon from '~icons/logos/brave';
 	import TerminalIcon from '~icons/ph/terminal-window-thin';
+	import BrowserIcon from '~icons/ph/globe-thin';
+	import MardownFileIcon from '~icons/ph/file-md-thin';
+
+	let windows: WindowData[] = $state([]);
+
+	setWindowsContext(windows);
 </script>
 
 <main>
 	<h1>SenOS</h1>
-	<DesktopIcon Icon={MyComputerIcon} caption="Mój komputer" />
-	<DesktopIcon Icon={RecycleBinIcon} caption="Kosz" />
-	<DesktopIcon Icon={TerminalIcon} caption="Terminal" />
-	<DesktopIcon Icon={BraveIcon} caption="Brave" />
+	<DesktopIcon Icon={MyComputerIcon} appName="Mój komputer" />
+	<DesktopIcon Icon={RecycleBinIcon} appName="Kosz (papier)" />
+	<DesktopIcon Icon={TerminalIcon} appName="Terminal" />
+	<DesktopIcon Icon={BrowserIcon} appName="SenOS Explorer" />
+	<DesktopIcon Icon={MardownFileIcon} appName="README.MD" />
+
+	{#each windows as window (window.id)}
+		<Window {...window} />
+	{/each}
 </main>
 
 <style>

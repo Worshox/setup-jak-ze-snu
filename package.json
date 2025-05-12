@@ -39,6 +39,7 @@
 	"dependencies": {
 		"@iconify-json/logos": "^1.2.4",
 		"@iconify-json/ph": "^1.2.2",
+		"canvas-confetti": "^1.9.3",
 		"unplugin-icons": "^22.1.0"
 	}
 }
