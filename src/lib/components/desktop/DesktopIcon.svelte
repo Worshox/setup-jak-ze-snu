@@ -23,7 +23,7 @@
 	<span>
 		<Icon color="#FFFFFF" width="3.75rem" height="3.75rem" />
 	</span>
-	<h3>{appName}</h3>
+	<h2>{appName}</h2>
 </button>
 
 <style>
@@ -45,7 +45,7 @@
 		background-color: #ffffff20;
 	}
 
-	h3 {
+	h2 {
 		font-size: 0.875rem;
 		color: #ffffff;
 		text-align: center;

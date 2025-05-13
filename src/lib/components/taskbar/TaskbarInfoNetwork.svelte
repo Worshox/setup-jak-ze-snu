@@ -11,7 +11,7 @@
 </script>
 
 <div class="network">
-	<button onclick={() => (open = !open)}>
+	<button onclick={() => (open = !open)} aria-label="Sieć">
 		<NetworkIcon color="#FFFFFF" width="1.5rem" height="1.5rem" />
 	</button>
 	{#if open}

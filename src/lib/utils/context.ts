@@ -9,11 +9,16 @@ interface Popup {
 	open: boolean;
 }
 
+interface Overlay {
+	visible: boolean;
+}
+
 const keys = {
 	taskbarInfo: 'SenOS:taskbarInfo',
 	windows: 'SenOS:windows',
 	popup: 'SenOS:popup',
-	trash: 'SenOS:trash'
+	trash: 'SenOS:trash',
+	overlay: 'SenOS:overlay'
 };
 
 export function setTaskbarInfoContext(taskbarInfo: TaskbarInfo) {
@@ -41,9 +46,17 @@ export function getPopupContext() {
 }
 
 export function setTrashContext(trash: Trash[]) {
-	setContext('SenOS:trash', trash);
+	setContext(keys.trash, trash);
 }
 
 export function getTrashContext() {
-	return getContext('SenOS:trash') as Trash[];
+	return getContext(keys.trash) as Trash[];
+}
+
+export function setOverlayContext(overlay: Overlay) {
+	setContext(keys.overlay, overlay);
+}
+
+export function getOverlayContext() {
+	return getContext(keys.overlay) as Overlay;
 }

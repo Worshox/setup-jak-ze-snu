@@ -16,8 +16,6 @@
 
 			if (trash.length === 0) {
 				clearInterval(interval);
-				// setTimeout(() => {}, 500);
-				// trash.length = 100;
 			}
 		}, 100);
 	}

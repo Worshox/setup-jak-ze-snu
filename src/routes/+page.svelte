@@ -13,6 +13,10 @@
 
 <svelte:head>
 	<title>SenOS</title>
+	<meta
+		name="description"
+		content="SenOS - praca konkursowa 'SETUP JAK ZE SNU' autorstwa Wojciecha Chrzana"
+	/>
 	<script
 		src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"
 	></script>

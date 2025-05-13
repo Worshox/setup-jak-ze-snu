@@ -12,7 +12,7 @@
         - Terminal
         - SenOS Explorer
 
-        Polecam najpierw pobawić zajrzeć do przeglądarki, potem pozwiedzać terminal, następnie zajrzeć do kosza i na koniec przejść do sprawdzenia sekcji Mój komputer.
+        Polecam najpierw zajrzeć do przeglądarki, potem pozwiedzać terminal, następnie zobaczyć do kosza i na koniec przejść do sprawdzenia sekcji Mój komputer, gdzie poznasz pełen potencjał tego potwora!
     </pre>
 </main>
 

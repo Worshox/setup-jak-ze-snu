@@ -16,7 +16,10 @@
 		<h2>SenOS Pro</h2>
 		<p>Ta funkcja dostępna jest w wersji Pro systemu SenOS.</p>
 		<p>Abyś ją uzyskać, muszę wygrać konkurs "SETUP JAK ZE SNU".</p>
-		<p>SenOS działa poprawnie tylko na setupie dostępnym do obejrzenia w aplikacji Brave.</p>
+		<p>
+			SenOS działa poprawnie tylko na setupie dostępnym do obejrzenia w aplikacji SenOS Explorer,
+			Terminalu lub w Moim komputerze.
+		</p>
 		<a href="https://jjit.it/uZo8LTb" target="_blank">Konkurs</a>
 	</article>
 </dialog>
@@ -31,6 +34,7 @@
 		display: block;
 		margin: 0;
 		background: transparent;
+		text-align: center;
 	}
 
 	dialog::before,

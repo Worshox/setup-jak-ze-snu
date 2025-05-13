@@ -47,17 +47,14 @@
 	}
 
 	.window-computer {
-		width: 60rem;
-		height: 40rem;
+		width: 70%;
+		height: fit-content;
+		max-height: 90%;
 	}
 
-	.window-trash {
-		width: 75rem;
-		height: 60%;
-	}
-
+	.window-trash,
 	.window-explorer {
-		width: 80%;
+		width: 70%;
 		height: 80%;
 	}
 </style>

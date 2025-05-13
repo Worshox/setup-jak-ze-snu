@@ -15,7 +15,7 @@ export function load({ getClientAddress }) {
 		trash: [
 			{
 				image: karton1Image,
-				name: 'Karton po monitorze LG 27GX790A-B - 27&prime;&prime; | OLED | QHD | 0.03ms | 480Hz',
+				name: 'Karton po monitorze LG 27GX790A-B - 27&prime;&prime; | OLED | QHD | 0.03 ms | 480 Hz',
 				date: trashDate,
 				size: '605.2 mm &times; 579.3 mm &times; 249.1 mm'
 			},
@@ -39,7 +39,7 @@ export function load({ getClientAddress }) {
 			},
 			{
 				image: karton5Image,
-				name: 'Karton po pamięci RAM Adata XPG LancerBlade 32GB [2x16GB 6000MHz DDR5 CL30 DIMM]',
+				name: 'Karton po pamięci RAM Adata XPG LancerBlade 64GB [4x16GB 6000MHz DDR5 CL30 DIMM]',
 				date: trashDate,
 				size: '33.8 mm &times; ? &times; ?'
 			},
@@ -57,7 +57,7 @@ export function load({ getClientAddress }) {
 			},
 			{
 				image: karton3Image,
-				name: 'Karton po wentylatorze NZXT F120 RGB 120mm czarny',
+				name: 'Karton po wentylatorze NZXT F120 RGB 120 mm czarny',
 				date: trashDate,
 				size: '26 mm &times; 120 mm &times; 120 mm'
 			},
@@ -69,13 +69,13 @@ export function load({ getClientAddress }) {
 			},
 			{
 				image: karton5Image,
-				name: 'Karton po dysku Lexar NM790 Pci-e NVMe 2TB',
+				name: 'Karton po dysku Lexar NM790 Pci-e NVMe 2 TB',
 				date: trashDate,
 				size: '22 mm &times; 2.45 mm &times; 80 mm'
 			},
 			{
 				image: karton1Image,
-				name: 'Karton po dysku Lexar NM790 Pci-e NVMe 1TB',
+				name: 'Karton po dysku Lexar NM790 Pci-e NVMe 1 TB',
 				date: trashDate,
 				size: '22 mm &times; 2.45 mm &times; 80 mm'
 			},
@@ -84,6 +84,18 @@ export function load({ getClientAddress }) {
 				name: 'Karton po AQIRYS Pasta termiczna AQ-2',
 				date: trashDate,
 				size: '-'
+			},
+			{
+				image: karton3Image,
+				name: 'Karton po chłodzeniu ENDORFY Navis F360 ARGB',
+				date: trashDate,
+				size: '120 mm &times; 395 mm &times; 54 mm'
+			},
+			{
+				image: karton4Image,
+				name: 'Karton po karcie graficznej Gigabyte AORUS Radeon RX 9070 XT ELITE 16GB',
+				date: trashDate,
+				size: '33.9 cm &times; 13.6 cm &times; 5.9 cm'
 			}
 		]
 	};

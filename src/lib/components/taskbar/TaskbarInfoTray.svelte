@@ -9,7 +9,7 @@
 </script>
 
 <div class="tray">
-	<button onclick={() => (open = !open)} data-open={open}>
+	<button onclick={() => (open = !open)} data-open={open} aria-label="Tray">
 		<i>
 			<CaretUpIcon color="#FFFFFF" width="1.5rem" height="1.5rem" />
 		</i>

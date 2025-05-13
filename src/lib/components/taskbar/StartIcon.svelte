@@ -1,13 +1,13 @@
 <script lang="ts">
 	import StartMenu from '$lib/components/taskbar/StartMenu.svelte';
-	import SvelteLogoIcon from '~icons/logos/svelte-icon';
+	import logo from '$lib/assets/img/logo.webp';
 
 	let open = $state(false);
 </script>
 
 <div class="start">
 	<button onclick={() => (open = !open)}>
-		<SvelteLogoIcon width="2rem" height="2rem" />
+		<img src={logo} alt="SenOS" />
 	</button>
 	{#if open}
 		<StartMenu bind:open />
@@ -31,5 +31,10 @@
 
 	button:hover {
 		background-color: #ffffff20;
+	}
+
+	img {
+		width: 2rem;
+		height: 2rem;
 	}
 </style>

@@ -5,7 +5,7 @@
 	let muted = $state(false);
 </script>
 
-<button onclick={() => (muted = !muted)}>
+<button onclick={() => (muted = !muted)} aria-label="Głosnosć">
 	{#if muted}
 		<SpeakerNoneIcon color="#FFFFFF" width="1.5rem" height="1.5rem" />
 	{:else}

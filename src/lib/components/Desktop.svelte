@@ -14,7 +14,7 @@
 </script>
 
 <main>
-	<h1>SenOS</h1>
+	<h1 class="animated-text">SenOS</h1>
 	<DesktopIcon Icon={MyComputerIcon} appName="Mój komputer" />
 	<DesktopIcon Icon={RecycleBinIcon} appName="Kosz (papier)" />
 	<DesktopIcon Icon={TerminalIcon} appName="Terminal" />
@@ -47,23 +47,5 @@
 		text-align: center;
 		user-select: none;
 		opacity: 0.4;
-	}
-
-	h1 {
-		background: linear-gradient(to right, #ff5607, #8905d1, #ff5607);
-		background-clip: text;
-		color: transparent;
-		background-size: 200% auto;
-		animation: animated-text 3s linear infinite;
-	}
-
-	@keyframes animated-text {
-		0% {
-			background-position: 200% 50%;
-		}
-
-		100% {
-			background-position: 0% 50%;
-		}
 	}
 </style>

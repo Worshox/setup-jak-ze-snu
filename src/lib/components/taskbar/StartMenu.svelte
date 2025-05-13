@@ -1,12 +1,15 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
 	import clickOutside from '$lib/actions/clickOutside';
+	import { getPopupContext } from '$lib/utils/context';
 	import RestartIcon from '~icons/ph/arrow-counter-clockwise-thin';
 	import SleepIcon from '~icons/ph/moon-thin';
 	import PowerIcon from '~icons/ph/power-thin';
 	import UserIcon from '~icons/ph/user-circle-thin';
 
 	let { open = $bindable() } = $props();
+
+	const popup = getPopupContext();
 </script>
 
 <article transition:fade={{ duration: 150 }} use:clickOutside={() => (open = false)}>
@@ -17,7 +20,7 @@
 	<menu>
 		{#each [SleepIcon, RestartIcon, PowerIcon] as Icon}
 			<li>
-				<button>
+				<button onclick={() => (popup.open = true)}>
 					<Icon width="1.75rem" height="1.75rem" />
 				</button>
 			</li>

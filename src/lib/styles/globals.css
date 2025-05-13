@@ -20,6 +20,35 @@ body {
     font-family: 'Satoshi', sans-serif;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 4rem;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 2rem 2.5rem;
+}
+
 i {
     transition: 300ms;
+}
+
+.animated-text {
+    background: linear-gradient(to right, #ff5607, #8905d1, #ff5607);
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: animated-text 3s linear infinite;
+}
+
+@keyframes animated-text {
+    0% {
+        background-position: 200% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }

@@ -47,15 +47,18 @@
 				output.push('');
 				output.push('----- Informacje o sprzęcie -----');
 				output.push('Procesor: Ryzen 7 9800X3D');
-				output.push('Karta graficzna: ???');
+				output.push('Karta graficzna: Gigabyte AORUS Radeon RX 9070 XT ELITE');
 				output.push('Płyta główna: ASRock B850 Riptide WiFi');
-				output.push('Pamięć operacyjna: 2x16GB 6000MHz DDR5 CL30 DIMM Adata XPG LancerBlade');
+				output.push(
+					'Pamięć operacyjna: 4 &times; 16 GB 6000MHz DDR5 CL30 DIMM Adata XPG LancerBlade'
+				);
 				output.push('Pamięć masowa: 2TB + 1TB Lexar NM790 Pci-e NVMe');
 				output.push('Zasilacz: NZXT C1200 V2 1200W 80+ Gold ATX 3.0');
 				output.push('');
 				output.push('----- Informacje o dodatkach -----');
-				output.push('Monitor: LG 27GX790A-B - 27" | OLED | QHD | 0.03ms | 480Hz');
+				output.push('Monitor: LG 27GX790A-B - 27&prime;&prime; | OLED | QHD | 0.03 ms | 480 Hz');
 				output.push('+ ramię na monitor ENDORFY Atlas Double');
+				output.push('Chłodzenie wodne: ENDORFY Navis F360 ARGB');
 				output.push('Obudowa: NZXT H6 Flow czarna');
 				output.push('+ wentylator NZXT F120 RGB 120mm czarny');
 				output.push('Podkładka: KRUX Space Carpet MAX');
@@ -64,8 +67,8 @@
 				output.push('');
 				break;
 			case 'komputronik':
-				output.push('https://www.komputronik.pl/cart/shared/show/radQmj0Bdx-0NkybKM4pe');
-				window.open('https://www.komputronik.pl/cart/shared/show/radQmj0Bdx-0NkybKM4pe', '_blank');
+				output.push('https://www.komputronik.pl/cart/shared/show/radQmj0Bdx-D5kxjKPOdO');
+				window.open('https://www.komputronik.pl/cart/shared/show/radQmj0Bdx-D5kxjKPOdO', '_blank');
 				break;
 			case 'winner':
 				output.push('A więc mówisz że pownienem wygrać? Dzięki 🥳');
@@ -132,7 +135,7 @@
 
 <main>
 	<pre>
-        {#each output as line}{line}
+        {#each output as line}{@html line}
 		{/each}W:\SenOS&gt; <input bind:this={commandInput} bind:value={input} onkeydown={onKeyDown} />
 	</pre>
 </main>
